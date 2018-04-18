@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="addr" class="model.Address">  
+<property name="house_no" value="12, NIIT University"/>
+<property name="street" value="NH-8"/>
+<property name="city" value="Neemrana"/>
+<property name="state" value="Rajasthan"/>
+<property name="pin" value="301705"/>
+</bean>  
+  
+  
+<bean id="student" class="model.Student">  
+<property name="name" value="Shakthi"/>
+<property name="grades" value="6"/>
+<property name="roll_no" value="U101114FCS196"/>
+<property name="address" ref="addr"/>
+</bean>  
+  
+</beans> 
